@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Home());
+        home: const Home());
   }
 }
 
@@ -31,12 +31,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
+        children: const [
           Center(
             child: Text(
               "Faysal",
               style: TextStyle(
-                  fontSize: 30, fontWeight: FontWeight.bold, color: Colors.red),
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red),
             ),
           )
         ],
